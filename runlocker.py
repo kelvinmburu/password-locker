@@ -94,10 +94,10 @@ def copy_password(account):
     def locker():
 
         # Display welcome message
-         print(" Hello, Welcome to Lock-R, A program built to store user credentials ...\n \n Please enter one of the following to proceed.\n CA ---  Sign in  \n LI ---  Have an account, Log in  \n")
+        print(" Hello, Welcome to Lock-R, A program built to store user credentials ...\n \n Please enter one of the following to proceed.\n CA ---  Sign in  \n LI ---  Have an account, Log in  \n")
     short_code = input("").lower().strip()
 
-         if short_code == "ca":
+    if short_code == "ca":
 
         print("Fill in the details below")
 
@@ -119,3 +119,21 @@ def copy_password(account):
 
             else:
                 print("Wrong password, please try again")
+
+            # Function to configure new user account
+
+            save_user(create_new_user(username, password))
+            print("*"*85)
+            print(
+                f"Dear {username}, Your account has been created succesfully! Your password is: {password}")
+            print("*"*85)
+
+# User log in to Lock-Password
+
+    elif short_code == "li":
+
+        print(" ")
+        print("*"*50)
+        print("Enter Lock-R Username and Password to Log in:")
+        print('*' * 50)
+        print(" ")
