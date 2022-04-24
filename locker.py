@@ -99,7 +99,13 @@ class Credentials():
 
     # Function to generate user passwords
 
-    def generate_user_password(stringLength=11):
-        password = string.ascii_uppercase + \
-            string.ascii_lowercase + string.digits + "~!@#$%^&*"
-      #  return ''.join(random.choice(password)) for i in range(stringLength())
+
+# characters to generate password from
+# characters = list(string.ascii_letters + string.digits + "!@#$%^&*()")
+
+
+def generate_random_password(stringLength=13):
+
+    password = string.ascii_uppercase + \
+        string.ascii_lowercase + string.digits + "~!@#$%^&*"
+    return ''.join(random.choice(password) for i in range(stringLength))
