@@ -84,3 +84,23 @@ def check_credential(account):
 def generate_random_password():
     auto_generated_password = Credentials.generate_random_password()
     return auto_generated_password
+
+# Function to copy password to clipboard
+
+
+def copy_password(account):
+    return Credentials.copy_password(account)
+
+    def locker():
+
+        # Display welcome message
+         print(" Hello, Welcome to Lock-R, A program built to store user credentials ...\n \n Please enter one of the following to proceed.\n CA ---  Sign in  \n LI ---  Have an account, Log in  \n")
+    short_code = input("").lower().strip()
+
+         if short_code == "ca":
+
+        print("Fill in the details below")
+
+        print('*' * 170)
+        username = input("User_name: ")
+        print('*' * 170)
