@@ -44,3 +44,43 @@ def display_user():
 def login_user(username, password):
     check_user = Credentials.verify_user(username, password)
     return check_user
+
+# Function to create user credential
+
+
+def save_credentials(credentials):
+    credentials.save_details()
+
+# Function to display credentials for all user_list
+
+
+def display_account_details():
+
+    return Credentials.display_credentials()
+
+# Function to delete a saved credentials
+
+
+def delete_credential(credentials):
+    credentials.delete_credentials()
+
+
+# Function to display user account credentials
+
+def find_credential(account):
+
+    return Credentials.find_credential(account)
+
+# Function to assess if a credential is available
+
+
+def check_credential(account):
+
+    return Credentials.if_credential_exist(account)
+
+# Random password generation
+
+
+def generate_random_password():
+    auto_generated_password = Credentials.generate_random_password()
+    return auto_generated_password
