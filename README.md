@@ -1,83 +1,86 @@
 # Password Locker
 
-<!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
-
 ![GitHub repo size](https://img.shields.io/github/repo-size/kelvinmburu/password-locker)
 ![GitHub Commit Activity](https://img.shields.io/github/commit-activity/w/kelvinmburu/password-locker)
 ![GitHub Top Language](https://img.shields.io/github/languages/top/kelvinmburu/password-locker)
 ![GitHub Contributors](https://img.shields.io/github/contributors/kelvinmburu/password-locker)
 ![GitHub Followers](https://img.shields.io/github/followers/kelvinmburu?style=social)
 
-Project name is a `<utility/tool/feature>` that allows `<insert_target_audience>` to do `<action/task_it_does>`.
+Project name is a `<tool>` that allows `<any user>` to do `<store their user credentials>`.
 
-Additional line of information text about what the project does. Your introduction should be around 2 or 3 sentences. Don't go overboard, people won't read it.
+## By Kelvin Mburu
+
+## Site Displaying
+
+Here's the app Screenshot:
+![Site Screenshot](img/readme-img.png)
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
-<!--- These are just example requirements. Add, duplicate or remove as required --->
-
-- You have installed the latest version of `<coding_language/dependency/requirement_1>`
-- You have a `<Windows/Linux/Mac>` machine. State which OS is supported/which is not.
-- You have read `<guide/link/documentation_related_to_project>`.
+- You have installed the latest version of `<Python3>`
+- You have a `<Windows/Linux/Mac>` machine.
+- You have read `<Installation Guide Below>`.
 
 ## Installing <project_name>
 
-To install <project_name>, follow these steps:
+To install <Password-Locker>, follow these steps:
 
-Linux and macOS:
+#### Linux and macOS:
 
-```
-<install_command>
-```
+- Open project in terminal after cloning.
 
-Windows:
+<install_command> - The application requires the following environment variables: - Python3.8 - Pyperclip - Pip
 
-```
-<install_command>
-```
+#### Windows:
 
-## Using <project_name>
+- Open project in terminal after cloning.
 
-To use <project_name>, follow these steps:
+## Using Password Locker
 
-```
-<usage_example>
-```
+To use <Password-Locker>, follow these steps:
 
-Add run commands and examples you think users will find useful. Provide an options reference for bonus points!
+- Go to:
+- [Github-Repository-Link](https://github.com/kelvinmburu/password-locker.git)
+- Git clone the URL to your local PC into a project folder.
+- cd into the project folder
+- Open the project using a text editor of your choice.
 
-## Contributing to <project_name>
+## Running the Application
 
-<!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
+To run the application, in your terminal:
 
-To contribute to <project_name>, follow these steps:
+- $ #!/usr/bin/env python3.8
+- $ chmod +x runlocker.py
+- $ ./runlocker.py
+
+## Want to Contribute to Password Locker?
+
+To contribute to <Password-Locker>, follow these steps:
 
 1. Fork this repository.
 2. Create a branch: `git checkout -b <branch_name>`.
 3. Make your changes and commit them: `git commit -m '<commit_message>'`
-4. Push to the original branch: `git push origin <project_name>/<location>`
+4. Push to the original branch: `git push origin <password-locker>/<main>`
 5. Create the pull request.
 
-Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+Alternatively see the GitHub documentation on [Creating a Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 ## Contributors
 
 Thanks to the following people who have contributed to this project:
 
-- [@scottydocs](https://github.com/scottydocs) 📖
-- [@cainwatson](https://github.com/cainwatson) 🐛
-- [@calchuchesta](https://github.com/calchuchesta) 🐛
-
-You might want to consider using something like the [All Contributors](https://github.com/all-contributors/all-contributors) specification and its [emoji key](https://allcontributors.org/docs/en/emoji-key).
+- [Kelvin Mburu](https://github.com/kelvinmburu) 📖
 
 ## Contact
 
-If you want to contact me you can reach me at <your_email@address.com>.
+If you want to contact me you can reach me at:
+
+- `<mburuhkelvin@gmail.com>`
+- `<kelvin.wanjiku@student.moringaschool.com>`
+- `<kelvin.wanjiku@azubiafrica.org>`
 
 ## License
 
-<!--- If you're not sure which open license to use see https://choosealicense.com/--->
-
-This project uses the following license: [<license_name>](link).
+[This project uses the following license:](LICENSE).
