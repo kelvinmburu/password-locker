@@ -60,3 +60,35 @@ class TestCredentials(unittest.TestCase):
 
         self.new_credential.delete_credentials()
         self.assertEqual(len(Credentials.credentials_list), 1)
+
+    # Test to a find a user credential
+
+    def test_find_credential(self):
+
+        self.new_credential.save_details()
+        test_credential = Credentials("KM", "Kevo", "maumau700")
+        test_credential.save_details()
+
+        the_credential = Credentials.find_credential("KM")
+
+        self.assertEqual(the_credential.account, test_credential.account)
+
+    # Test to get Boolean value of user credentials
+
+    def test_credential_exists(self):
+
+        self.new_credential.save_details()
+        the_credential = Credentials("KM", "Kevo", "maumau700")
+        the_credential.save_details()
+        credential_is_found = Credentials.if_credential_exist("KM")
+        self.assertTrue(credential_is_found)
+
+    # Test to dislay when a credential is found
+    def test_credential_all_saved_credentials(self):
+
+        self.assertTrue(Credentials.display_credentials(),
+                        Credentials.credentials_list)
+
+
+if __name__ == "__main__":
+    unittest.main()
