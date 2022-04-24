@@ -115,7 +115,7 @@ def locker():
                 break
 
             elif password_Choice == 'gp':
-                password = generate_Password()
+                password = generate_random_password()
                 break
 
             else:
@@ -123,7 +123,7 @@ def locker():
 
         # Function to configure new user account
 
-        save_user(create_new_user(username, password))
+        save_user(create_user(username, password))
         print("*"*85)
         print(
             f"Dear {username}, Your account has been created succesfully! Your password is: {password}")
@@ -173,7 +173,7 @@ def locker():
                     break
 
                 elif password_Choice == 'gp':
-                    password = generate_Password()
+                    password = generate_random_password()
                     break
 
                 else:
@@ -192,3 +192,33 @@ def locker():
 
             if display_accounts_details():
                 print("Here's your list of saved Credentials: ")
+
+                print('*' * 35)
+                print('_' * 35)
+
+                for account in display_accounts_details():
+                    print(
+                        f" Account:{account.account} \n User Name:{username}\n Password:{password}")
+                    print('_' * 35)
+                print('*' * 35)
+
+            else:
+                print("No existing credential found...")
+
+        # Elif function to check for existing credential in the application
+
+        elif short_code == "ec":
+            print("Enter the Application Name you want to search for")
+            search_name = input().lower()
+
+            if find_credential(search_name):
+                search_credential = find_credential(search_name)
+                print(f"Account Name : {search_credential.account}")
+                print('-' * 50)
+                print(
+                    f"User Name: {search_credential.userName} Password :{search_credential.password}")
+                print('-' * 50)
+
+            else:
+                print("That Credential does not exist")
+                print('\n')
