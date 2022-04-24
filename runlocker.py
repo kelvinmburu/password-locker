@@ -104,3 +104,18 @@ def copy_password(account):
         print('*' * 170)
         username = input("User_name: ")
         print('*' * 170)
+
+        while True:
+            print(" IP - To input own pasword:\n GP - To generate random Password")
+            password_Choice = input().lower().strip()
+
+            if password_Choice == 'ip':
+                password = input("Enter Password\n")
+                break
+
+            elif password_Choice == 'gp':
+                password = generate_Password()
+                break
+
+            else:
+                print("Wrong password, please try again")
