@@ -95,7 +95,7 @@ def copy_password(account):
 def locker():
 
     # Display welcome message
-    print(" Hello, Welcome to Lock-R, A program built to store user credentials ...\n \n Please enter one of the following to proceed.\n CA ---  Sign in  \n LI ---  Have an account, Log in  \n")
+    print(" Hello, Welcome to Lock-P, A program built to store user credentials ...\n \n Please enter one of the following to proceed.\n CA ---  Sign in  \n LI ---  Have an account, Log in  \n")
     short_code = input("").lower().strip()
 
     if short_code == "ca":
@@ -180,7 +180,7 @@ def locker():
                     print("Invalid password please try again")
 
                 # Function to save new user credentials
-                save_credentials(create_new_credential(
+                save_credentials(save_credentials(
                     account, userName, password))
                 print('\n')
                 print(
@@ -190,13 +190,13 @@ def locker():
         # Function to view user credentials
         elif short_code == "vc":
 
-            if display_accounts_details():
+            if display_account_details():
                 print("Here's your list of saved Credentials: ")
 
                 print('*' * 35)
                 print('_' * 35)
 
-                for account in display_accounts_details():
+                for account in display_account_details():
                     print(
                         f" Account:{account.account} \n User Name:{username}\n Password:{password}")
                     print('_' * 35)
@@ -240,3 +240,23 @@ def locker():
 
             else:
                 print(" Credential to be deleted does not exist")
+
+        # Function to generate random Password
+
+        elif short_code == 'gp':
+
+            password = generate_random_password()
+            print(f" succesfully generated {password} ")
+
+        # Function to log out of application
+
+        elif short_code == 'ex':
+            print("Thank you for using Lock-P.. See you next time!")
+            break
+
+        else:
+            print("Wrong entry! let entry match those in menu")
+
+
+if __name__ == '__main__':
+    locker()
