@@ -41,3 +41,22 @@ class TestCredentials(unittest.TestCase):
 
         self.new_credential = self.details()
         self.assertEqual(len(Credentials.credentials_list), 1)
+
+    # Clear credentials after test case running
+
+    def test_save_many_credentials(self):
+        self.new_credential.save.details()
+        test_credential = Credentials("KM", "Kevo", "maumau700")
+        test_credential.save.details()
+        self.assertEqual(len(Credentials.credentials_list), 2)
+
+    # Test to delete a credential
+
+    def test_delete_credential(self):
+
+        self.new_credential.save_details()
+        test_credential = Credentials("KM", "Kevo", "maumau700")
+        test_credential.save_details()
+
+        self.new_credential.delete_credentials()
+        self.assertEqual(len(Credentials.credentials_list), 1)
