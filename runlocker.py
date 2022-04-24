@@ -91,10 +91,11 @@ def generate_random_password():
 def copy_password(account):
     return Credentials.copy_password(account)
 
-    def locker():
 
-        # Display welcome message
-        print(" Hello, Welcome to Lock-R, A program built to store user credentials ...\n \n Please enter one of the following to proceed.\n CA ---  Sign in  \n LI ---  Have an account, Log in  \n")
+def locker():
+
+    # Display welcome message
+    print(" Hello, Welcome to Lock-R, A program built to store user credentials ...\n \n Please enter one of the following to proceed.\n CA ---  Sign in  \n LI ---  Have an account, Log in  \n")
     short_code = input("").lower().strip()
 
     if short_code == "ca":
@@ -120,45 +121,74 @@ def copy_password(account):
             else:
                 print("Wrong password, please try again")
 
-            # Function to configure new user account
+        # Function to configure new user account
 
-            save_user(create_new_user(username, password))
-            print("*"*85)
-            print(
-                f"Dear {username}, Your account has been created succesfully! Your password is: {password}")
-            print("*"*85)
+        save_user(create_new_user(username, password))
+        print("*"*85)
+        print(
+            f"Dear {username}, Your account has been created succesfully! Your password is: {password}")
+        print("*"*85)
 
-# User log in to Lock-Password
+    # User log in to Lock-Password
 
     elif short_code == "li":
 
         print(" ")
         print("*"*50)
-        print("Enter Lock-R Username and Password to Log in:")
+        print("Enter Lock-P Username and Password to Log in:")
         print('*' * 50)
         print(" ")
 
-# Function to verify user login
+        # Function to verify user login
 
-    username = input("Username: ")
-    password = input("password: ")
-    login = login_user(username, password)
+        username = input("Username: ")
+        password = input("password: ")
+        login = login_user(username, password)
 
-    if login_user == login:
-        print(f"Hello {username}.Welcome back to Lock-P!")
-        print('\n')
+        if login_user == login:
+            print(f"Hello {username}.Welcome back to Lock-P!")
+            print('\n')
 
     while True:
         print("Use these codes:\n CC - New Credential \n VC - Display Credentials \n EC - look for existing credential \n GP - Generate A randomn password \n Del - Delete credential \n EX - Logout \n")
         short_code = input().lower().strip()
 
-# Function to ADD any new credential
+        # Function to ADD any new credential
 
+        if short_code == "cc":
+            print("Create New Credential")
+            print("."*20)
+            print("Application name:  (e.g 'Instagram')")
+            account = input().lower()
+            print("Your Account username")
+            userName = input()
 
-if short_code == "cc":
-    print("Create New Credential")
-    print("."*20)
-    print("Application name:  (e.g 'Instagram')")
-    account = input().lower()
-    print("Your Account username")
-    userName = input()
+            while True:
+                print(
+                    " TP - To type your own password: \n GP - To let Lock-P generate random Password for you")
+                password_Choice = input().lower().strip()
+
+                if password_Choice == 'tp':
+                    password = input("Enter Your Own Password \n")
+                    break
+
+                elif password_Choice == 'gp':
+                    password = generate_Password()
+                    break
+
+                else:
+                    print("Invalid password please try again")
+
+                # Function to save new user credentials
+                save_credentials(create_new_credential(
+                    account, userName, password))
+                print('\n')
+                print(
+                    f"Account Credential for:  {account} -  UserName:  {userName}  -  Password:  {password}  created and saved succesfully!")
+                print('\n')
+
+        # Function to view user credentials
+        elif short_code == "vc":
+
+            if display_accounts_details():
+                print("Here's your list of saved Credentials: ")
