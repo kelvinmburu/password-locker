@@ -81,9 +81,9 @@ Thanks to the following people who have contributed to this project:
 
 If you want to contact me you can reach me at:
 
-- [Personal](mburuhkelvin@gmail.com)
-- [School-Email](kelvin.wanjiku@student.moringaschool.com)
-- [Personal-Email](kelvin.wanjiku@azubiafrica.org)
+- [mburuhkelvin@gmail.com](mburuhkelvin@gmail.com)
+- [kelvin.wanjiku@student.moringaschool.com](kelvin.wanjiku@student.moringaschool.com)
+- [kelvin.wanjiku@azubiafrica.org](kelvin.wanjiku@azubiafrica.org)
 
 ## License
 
