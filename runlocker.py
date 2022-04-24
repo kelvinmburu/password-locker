@@ -137,3 +137,28 @@ def copy_password(account):
         print("Enter Lock-R Username and Password to Log in:")
         print('*' * 50)
         print(" ")
+
+# Function to verify user login
+
+    username = input("Username: ")
+    password = input("password: ")
+    login = login_user(username, password)
+
+    if login_user == login:
+        print(f"Hello {username}.Welcome back to Lock-P!")
+        print('\n')
+
+    while True:
+        print("Use these codes:\n CC - New Credential \n VC - Display Credentials \n EC - look for existing credential \n GP - Generate A randomn password \n Del - Delete credential \n EX - Logout \n")
+        short_code = input().lower().strip()
+
+# Function to ADD any new credential
+
+
+if short_code == "cc":
+    print("Create New Credential")
+    print("."*20)
+    print("Application name:  (e.g 'Instagram')")
+    account = input().lower()
+    print("Your Account username")
+    userName = input()
