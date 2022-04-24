@@ -23,7 +23,7 @@ Before you begin, ensure you have met the following requirements:
 - You have a `<Windows/Linux/Mac>` machine.
 - You have read `<Installation Guide Below>`.
 
-## Installing <project_name>
+## Installing Password Locker
 
 To install <Password-Locker>, follow these steps:
 
@@ -31,7 +31,9 @@ To install <Password-Locker>, follow these steps:
 
 - Open project in terminal after cloning.
 
-<install_command> - The application requires the following environment variables: - Python3.8 - Pyperclip - Pip
+<install command> - The application requires the following environment variables:
+
+- Python3.8 - Pyperclip - Pip
 
 #### Windows:
 
@@ -39,7 +41,7 @@ To install <Password-Locker>, follow these steps:
 
 ## Using Password Locker
 
-To use <Password-Locker>, follow these steps:
+To use <Password-Locker> follow these steps:
 
 - Go to:
 - [Github-Repository-Link](https://github.com/kelvinmburu/password-locker.git)
@@ -83,4 +85,4 @@ If you want to contact me you can reach me at:
 
 ## License
 
-[This project uses the following license:](LICENSE).
+[This project uses an MIT License:](LICENSE).
