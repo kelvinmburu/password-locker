@@ -25,41 +25,43 @@ Before you begin, ensure you have met the following requirements:
 
 ## Installing Password Locker
 
-To install <Password-Locker>, follow these steps:
+To install <Password-Locker> follow these steps:
 
 #### Linux and macOS:
 
 - Open project in terminal after cloning.
 
-<install command> - The application requires the following environment variables:
+#### The application requires the following environment variables:
 
-- Python3.8 - Pyperclip - Pip
+- Python3.8
+- Pyperclip
+- Pip
 
 #### Windows:
 
-- Open project in terminal after cloning.
+- Open project in Windows terminal after cloning.
 
 ## Using Password Locker
 
-To use <Password-Locker> follow these steps:
+To use `<Password Locker>` follow these steps:
 
 - Go to:
 - [Github-Repository-Link](https://github.com/kelvinmburu/password-locker.git)
 - Git clone the URL to your local PC into a project folder.
-- cd into the project folder
+- `<cd>` into the project folder
 - Open the project using a text editor of your choice.
 
 ## Running the Application
 
-To run the application, in your terminal:
+To run the application in your terminal, run the commands below:
 
-- $ #!/usr/bin/env python3.8
-- $ chmod +x runlocker.py
-- $ ./runlocker.py
+- $ `<#!/usr/bin/env python3.8>`
+- $ `<chmod +x runlocker.py>`
+- $ `<./runlocker.py>`
 
 ## Want to Contribute to Password Locker?
 
-To contribute to <Password-Locker>, follow these steps:
+To contribute to `<Password-Locker>`, follow these steps:
 
 1. Fork this repository.
 2. Create a branch: `git checkout -b <branch_name>`.
