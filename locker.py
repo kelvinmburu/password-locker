@@ -96,3 +96,10 @@ class Credentials():
     def display_credentials(cls):
 
         return cls.credentials_list
+
+    # Function to generate user passwords
+
+    def generate_user_password(stringLength=11):
+        password = string.ascii_uppercase + \
+            string.ascii_lowercase + string.digits + "~!@#$%^&*"
+        return ''.join(random.choice(password)) for i in range(stringLength())
