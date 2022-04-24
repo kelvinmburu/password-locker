@@ -102,4 +102,4 @@ class Credentials():
     def generate_user_password(stringLength=11):
         password = string.ascii_uppercase + \
             string.ascii_lowercase + string.digits + "~!@#$%^&*"
-        return ''.join(random.choice(password)) for i in range(stringLength())
+      #  return ''.join(random.choice(password)) for i in range(stringLength())
