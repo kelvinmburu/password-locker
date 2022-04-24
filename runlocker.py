@@ -27,3 +27,20 @@ def create_user(username, password):
     return new_user
 
 # Function to save user account
+
+
+def save_user(user):
+    user.save_user()
+
+# Function to display user account information
+
+
+def display_user():
+    return User.display_user()
+
+
+# Function to create login user account
+
+def login_user(username, password):
+    check_user = Credentials.verify_user(username, password)
+    return check_user
