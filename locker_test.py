@@ -22,3 +22,22 @@ class TestClass(unittest.TestCase):
     def test_save_user(self):
         self.new_user.save_user()
         self.assertEqual(len(User.user_list), 1)
+
+
+class TestCredentials(unittest.TestCase):
+
+    def setUp(self):
+        self.new_credential = Credentials('Gmail', 'Kelvin', 'mburu')
+
+        def test_init(self):
+
+            self.assertEqual(self.new_credential.account, 'Gmail')
+            self.assertEqual(self.new_credential.userName, 'Kelvin')
+            self.assertEqual(self.new_credential.password, 'mburu')
+
+    # Test function for credential user list validation
+
+    def save_credential_test(self):
+
+        self.new_credential = self.details()
+        self.assertEqual(len(Credentials.credentials_list), 1)
