@@ -59,3 +59,23 @@ class Credentials():
         Credentials.credentials_list.append(self)
 
     # Add function for deleting user credentials
+
+    def delete_credentials(self):
+
+        Credentials.credentials_list.remove(self)
+
+    # Function to search for user credentials using app name
+
+    @classmethod
+    def find_credential(cls, account):
+
+        for credential in cls.credentials_list:
+            if credential.account == account:
+                return credential
+
+    # Function to copy password to clipboard using pyperclip
+
+    @classmethod
+    def copy_password(cls, account):
+        found_credentials = Credentials.find_credential(account)
+        pyperclip.copy(found_credentials.password)
