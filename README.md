@@ -2,11 +2,11 @@
 
 <!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
 
-![GitHub repo size](https://img.shields.io/github/repo-size/kelvinmburu/README-template.md)
-![GitHub contributors](https://img.shields.io/github/contributors/kelvinmburu/README-template.md)
-![GitHub stars](https://img.shields.io/github/stars/kelvinmburu/README-template.md?style=social)
-![GitHub forks](https://img.shields.io/github/forks/kelvinmburu/README-template.md?style=social)
-![Twitter Follow](https://img.shields.io/twitter/follow/kelvinmburu?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/kelvinmburu/password-locker)
+![GitHub Commit Activity](https://img.shields.io/github/commit-activity/w/kelvinmburu/password-locker)
+![GitHub Top Language](https://img.shields.io/github/languages/top/kelvinmburu/password-locker)
+![GitHub Contributors](https://img.shields.io/github/contributors/kelvinmburu/password-locker)
+![GitHub Followers](https://img.shields.io/github/followers/kelvinmburu?style=social)
 
 Project name is a `<utility/tool/feature>` that allows `<insert_target_audience>` to do `<action/task_it_does>`.
 
