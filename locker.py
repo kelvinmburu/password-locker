@@ -43,3 +43,19 @@ class Credentials():
             if(user.username == username and user.password == password):
                 a_user = user.username
                 return a_user
+
+    # Add new function that defines user credential attributes
+
+    def __init__(self, account, userName, password):
+
+        self.account = account
+        self.userName = userName
+        self.password = password
+
+    # Function to store credentials to user list
+
+    def save_details(self):
+
+        Credentials.credentials_list.append(self)
+
+    # Add function for deleting user credentials
